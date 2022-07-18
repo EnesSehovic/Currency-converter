@@ -3,7 +3,8 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QStackedWidget
 from PyQt5.uic import loadUi
 
-os.chdir(r'C:\Users\Unnamed\Desktop\Python\currConverter')
+c = os.getcwd()
+os.chdir(c)
 
 class CurrencyConvert(QDialog):
     def __init__(self):
@@ -49,15 +50,9 @@ class CurrencyConvert(QDialog):
             self.errorLabel.setText('Enter only numbers')
 
 
-# main
 app = QApplication(sys.argv)
 mainScreen = CurrencyConvert()
-#widget = QStackedWidget()
-#
-#widget.addWidget(mainScreen)
-#widget.setFixedHeight(540)
-#widget.setFixedWidth(300)
-#widget.show()
+
 window = CurrencyConvert()
 window.setFixedHeight(540)
 window.setFixedWidth(300)
