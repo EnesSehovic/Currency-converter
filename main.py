@@ -1,6 +1,6 @@
 import sys, os
 from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QDialog, QApplication, QStackedWidget
+from PyQt5.QtWidgets import QDialog, QApplication
 from PyQt5.uic import loadUi
 
 c = os.getcwd()
